@@ -9,16 +9,20 @@
       <v-toolbar-title>マイアドレス帳</v-toolbar-title>
       <v-spacer></v-spacer>
     </v-app-bar>
-    <v-content>
-    </v-content>
+    <v-main>
+      <SideNav />
+    </v-main>
   </v-app>
 </template>
 
 <script>
+import SideNav from './components/SideNav.vue'
 
 export default {
   name: 'App',
-
+  components: {
+    SideNav
+  },
   data: () => ({
     //
   }),
